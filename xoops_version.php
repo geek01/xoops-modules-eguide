@@ -1,7 +1,7 @@
 <?php
 // Event Guide Module
 //
-use Xoopsmodules\eguide;
+use XoopsModules\Eguide;
 
 # for duplicatable (not D3, old style)
 include __DIR__ . '/mydirname.php';
@@ -51,7 +51,7 @@ $modversion['tables'] = [
     $moduleDirName . '_' . 'extent'
 ];
 
-$helper = eguide\Helper::getInstance();
+$helper = Eguide\Helper::getInstance();
 $helper->loadLanguage('common');
 
 // ------------------- Help files ------------------- //

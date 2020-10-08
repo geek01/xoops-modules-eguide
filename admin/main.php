@@ -142,7 +142,7 @@ switch ($op) {
 }
 
 xoops_cp_header();
-include __DIR__ . '/mymenu.php';
+// include __DIR__ . '/mymenu.php';
 
 $myts = MyTextSanitizer::getInstance();
 $tags = css_tags();

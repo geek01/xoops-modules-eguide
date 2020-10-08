@@ -111,6 +111,9 @@ define('_MI_EGUIDE_NEWPOST_NOTIFY_CAP', '當新的活動增加時提醒我');
 define('_MI_EGUIDE_CNEWPOST_NOTIFY', '在分類裏新增一個活動');
 define('_MI_EGUIDE_CNEWPOST_NOTIFY_CAP', '在分類裏新增一個活動時提醒我');
 
+//2.74
+define('_MI_EGUIDE_HOME', '首頁');
+
 // for altsys
 if (!defined('_MD_A_MYMENU_MYTPLSADMIN')) {
     define('_MD_A_MYMENU_MYTPLSADMIN', 'Templates');

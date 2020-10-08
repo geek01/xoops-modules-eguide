@@ -1,11 +1,11 @@
 <?php
 //
 
-use Xoopsmodules\eguide;
+use XoopsModules\Eguide;
 
 require_once __DIR__ . '/../class/Helper.php';
 //require_once __DIR__ . '/../include/common.php';
-$helper = eguide\Helper::getInstance();
+$helper = Eguide\Helper::getInstance();
 
 $pathIcon32    = \Xmf\Module\Admin::menuIconPath('');
 $pathModIcon32 = $helper->getModule()->getInfo('modicons32');

@@ -29,7 +29,7 @@ if (!function_exists('file_get_contents')) {
 }
 
 xoops_cp_header();
-include __DIR__ . '/mymenu.php';
+// include __DIR__ . '/mymenu.php';
 if (function_exists('Legacy_function_stylesheet')) {
     echo '<link href="' . XOOPS_URL . "/modules/legacyRender/admin/css.php?file=module.css&dirname=legacy\" media=\"all\" type=\"text/css\" rel=\"stylesheet\">\n";
 }

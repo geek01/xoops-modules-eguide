@@ -16,14 +16,14 @@
  * @author       XOOPS Development Team
  */
 
-use Xoopsmodules\eguide;
+use XoopsModules\Eguide;
 
 require_once __DIR__ . '/../../../include/cp_header.php';
 require_once __DIR__ . '/../functions.php';
 
 $moduleDirName = basename(dirname(__DIR__));
-/** @var \Xoopsmodules\eguide\Helper $helper */
-$helper = eguide\Helper::getInstance();
+/** @var \XoopsModules\Eguide\Helper $helper */
+$helper = Eguide\Helper::getInstance();
 
 /** @var Xmf\Module\Admin $adminObject */
 $adminObject = \Xmf\Module\Admin::getInstance();
