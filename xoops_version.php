@@ -4,7 +4,11 @@
 use XoopsModules\Eguide;
 
 # for duplicatable (not D3, old style)
-include __DIR__ . '/mydirname.php';
+require_once __DIR__ . '/mydirname.php';
+
+require_once __DIR__ . '/preloads/autoloader.php';
+$helper = Eguide\Helper::getInstance();
+$helper->loadLanguage('common');
 
 $moduleDirName = basename(__DIR__);
 
@@ -50,9 +54,6 @@ $modversion['tables'] = [
     $moduleDirName . '_' . 'category',
     $moduleDirName . '_' . 'extent'
 ];
-
-$helper = Eguide\Helper::getInstance();
-$helper->loadLanguage('common');
 
 // ------------------- Help files ------------------- //
 $modversion['helpsection'] = [
