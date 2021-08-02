@@ -401,7 +401,11 @@ VALUES ($eid,$exid,$uid,$now,$ml, " . $xoopsDB->quoteString($value) . ",$accept,
                 echo "</div>\n";
             } else {
                 $eid = $data['eid'];
-                $key = isset($_GET['key']) ? (int)$_GET['key'] : '';
+                $key = isset($_GET['key']) ? (int) $_GET['key'] : '';
+                if (!$isadmin && $key !== (int) $data['confirm']) {
+                    redirect_header($evurl, 5, _NOPERM);
+                    exit;
+                }
                 if ($eid) {
                     edit_eventdata($data);
                 }
