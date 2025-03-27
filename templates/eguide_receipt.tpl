@@ -83,7 +83,7 @@
                         <td><{$value}></td>
                     <{/foreach}>
                     <{/foreach}>
-                <tr>
+                </tr>
             </table>
             <{if $confirm}>
                 <input type='hidden' name='op' value='active'>
@@ -136,5 +136,5 @@
             <{/foreach}>
         </table>
     <{/if}>
+    <{/if}>
 </div>
-<{/if}>
