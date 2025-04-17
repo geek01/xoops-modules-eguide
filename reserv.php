@@ -33,7 +33,7 @@ function reserv_permit($ruid, $euid, $confirm)
             return false;
         }
 
-        return true;
+        return false;
     }
     // administrator has permit
     if ($isadmin) {
@@ -402,10 +402,6 @@ VALUES ($eid,$exid,$uid,$now,$ml, " . $xoopsDB->quoteString($value) . ",$accept,
             } else {
                 $eid = $data['eid'];
                 $key = isset($_GET['key']) ? (int) $_GET['key'] : '';
-                if (!$isadmin && $key !== (int) $data['confirm']) {
-                    redirect_header($evurl, 5, _NOPERM);
-                    exit;
-                }
                 if ($eid) {
                     edit_eventdata($data);
                 }
