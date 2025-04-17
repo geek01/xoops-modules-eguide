@@ -78,7 +78,7 @@ define('_MD_RESERV_TOMATCH', ' %d個名額 (%d個名額)');
 define('_MD_RESERV_CLOSE', '報名活動已截止');
 define('_MD_RESERV_NEEDLOGIN', '您需要<a href="' . XOOPS_URL . '/user.php">登入</a>,才可以報名');
 define('_MD_RESERV_PLUGIN_FAIL', '缺少預約時需要的條件');
-define('_MD_CANCEL_FAIL', '取消處裡失敗');
+define('_MD_CANCEL_FAIL', '取消處理失敗');
 define('_MD_CANCEL_SUBJ', '取消 - {EVENT_DATE} {EVENT_TITLE}');
 define('_MD_NODATA', '無資料');
 define('_MD_NOEVENT', '無法找到該活動的內容紀錄');
